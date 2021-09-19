@@ -1,7 +1,7 @@
 //index.js
 import a from './a.js';
 import b from './b.js';
-require('./c.js');
+import(/* webpackChunkName: 'ccc' */'./c')
 function fn() {
     console.log('index-------');
 }
