@@ -1,1 +1,1 @@
-console.log('前端开发');
+console.log($.ajax, '前端开发');
