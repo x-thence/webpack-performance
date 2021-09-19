@@ -7,7 +7,11 @@ const obtn = document.createElement('button')
     document.body.appendChild(obtn)
     obtn.addEventListener('click', function() {
         // 引入自定的模块
-        import('./module').then(({ default: _ }) => {
+        import(
+            /*webpackChunkName: 'module' */
+            /*webpackPrefetch: true */
+             /*webpackPreLoad: false */
+        './module').then(({ default: _ }) => {
             console.log(_);
         })
     })
